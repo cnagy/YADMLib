@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60732A6D-6D92-4793-B9B6-4F95D82F3131</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppLiftAPILib</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E34F330-2E05-464E-BBE4-00A5B889D3B4</key>
+		<string>https://github.com/cnagy/YADMLib</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppLiftAPILib.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E34F330-2E05-464E-BBE4-00A5B889D3B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cnagy/YADMLib</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E34F330-2E05-464E-BBE4-00A5B889D3B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E34F330-2E05-464E-BBE4-00A5B889D3B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YADMLib</string>
+		</dict>
+	</array>
+</dict>
+</plist>

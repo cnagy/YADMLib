@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D58FE3EF190EA1F8001822F1 /* YADMUniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D58FE3F0190EA1F8001822F1 /* Build configuration list for PBXAggregateTarget "YADMUniversalLib" */;
+			buildPhases = (
+				D58FE3F3190EA236001822F1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = YADMUniversalLib;
+			productName = AppLiftAPIUniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D5267AEE18F572F900F8570F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5267AED18F572F900F8570F /* XCTest.framework */; };
+		D5267AEF18F572F900F8570F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5267ADF18F572F900F8570F /* Foundation.framework */; };
+		D5267AF418F572F900F8570F /* libYADMLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5267ADC18F572F900F8570F /* libYADMLib.a */; };
+		D559313318FC2B0800B9FFA5 /* YADMApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D559313118FC2B0800B9FFA5 /* YADMApiCall.m */; };
+		D58FE3E319095511001822F1 /* YADMJSONToDomainModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FE3E119095511001822F1 /* YADMJSONToDomainModelParser.m */; };
+		D58FE3EE190A63AC001822F1 /* YADMApiCallTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FE3ED190A63AC001822F1 /* YADMApiCallTest.m */; };
+		D58FE3F4190FB322001822F1 /* YADMApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D559313118FC2B0800B9FFA5 /* YADMApiCall.m */; };
+		D58FE3F5190FB322001822F1 /* YADMApiCallResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F35FAF18FD3BAC00655D09 /* YADMApiCallResult.m */; };
+		D58FE3F6190FB322001822F1 /* YADMJSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6FF7E18FD74500090E35F /* YADMJSONModelError.m */; };
+		D58FE3F7190FB322001822F1 /* YADMJSONToDomainModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D58FE3E119095511001822F1 /* YADMJSONToDomainModelParser.m */; };
+		D58FE3F8190FB322001822F1 /* YADMJSONApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F35F6018FD193F00655D09 /* YADMJSONApiModel.m */; };
+		D58FE3F9190FB331001822F1 /* YADMJSONApiModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5F35F5F18FD193F00655D09 /* YADMJSONApiModel.h */; };
+		D5E6FF8018FD74500090E35F /* YADMJSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E6FF7E18FD74500090E35F /* YADMJSONModelError.m */; };
+		D5F35F6218FD193F00655D09 /* YADMJSONApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F35F6018FD193F00655D09 /* YADMJSONApiModel.m */; };
+		D5F35FB118FD3BAC00655D09 /* YADMApiCallResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F35FAF18FD3BAC00655D09 /* YADMApiCallResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5267AF218F572F900F8570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5267AD418F572F900F8570F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5267ADB18F572F900F8570F;
+			remoteInfo = AppLiftAPILib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5267ADA18F572F900F8570F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				D58FE3F9190FB331001822F1 /* YADMJSONApiModel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D5267ADC18F572F900F8570F /* libYADMLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYADMLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5267ADF18F572F900F8570F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5267AEC18F572F900F8570F /* YADMLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YADMLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5267AED18F572F900F8570F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5267AF718F572F900F8570F /* YADMLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YADMLibTests-Info.plist"; sourceTree = "<group>"; };
+		D559313018FC2B0800B9FFA5 /* YADMApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCall.h; sourceTree = "<group>"; };
+		D559313118FC2B0800B9FFA5 /* YADMApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMApiCall.m; sourceTree = "<group>"; };
+		D559313818FC2DF900B9FFA5 /* YADMApiCallResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCallResult.h; sourceTree = "<group>"; };
+		D58FE3DC19091521001822F1 /* YADMApiCallDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCallDelegate.h; sourceTree = "<group>"; };
+		D58FE3E019095511001822F1 /* YADMJSONToDomainModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMJSONToDomainModelParser.h; sourceTree = "<group>"; };
+		D58FE3E119095511001822F1 /* YADMJSONToDomainModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMJSONToDomainModelParser.m; sourceTree = "<group>"; };
+		D58FE3ED190A63AC001822F1 /* YADMApiCallTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMApiCallTest.m; sourceTree = "<group>"; };
+		D59305EF190FD81B0000090C /* YADMLib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YADMLib-Prefix.pch"; sourceTree = "<group>"; };
+		D5E6FF7D18FD74500090E35F /* YADMJSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMJSONModelError.h; sourceTree = "<group>"; };
+		D5E6FF7E18FD74500090E35F /* YADMJSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMJSONModelError.m; sourceTree = "<group>"; };
+		D5F35F5F18FD193F00655D09 /* YADMJSONApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YADMJSONApiModel.h; path = YADMLib/YADMJSONApiModel.h; sourceTree = "<group>"; };
+		D5F35F6018FD193F00655D09 /* YADMJSONApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YADMJSONApiModel.m; path = YADMLib/YADMJSONApiModel.m; sourceTree = "<group>"; };
+		D5F35FAF18FD3BAC00655D09 /* YADMApiCallResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMApiCallResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5267AD918F572F900F8570F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5267AE918F572F900F8570F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5267AEE18F572F900F8570F /* XCTest.framework in Frameworks */,
+				D5267AF418F572F900F8570F /* libYADMLib.a in Frameworks */,
+				D5267AEF18F572F900F8570F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5267AD318F572F900F8570F = {
+			isa = PBXGroup;
+			children = (
+				D5267AE118F572F900F8570F /* YADMILib */,
+				D5267AF518F572F900F8570F /* YADMLib Tests */,
+				D5267ADE18F572F900F8570F /* Frameworks */,
+				D5267ADD18F572F900F8570F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5267ADD18F572F900F8570F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5267ADC18F572F900F8570F /* libYADMLib.a */,
+				D5267AEC18F572F900F8570F /* YADMLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5267ADE18F572F900F8570F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5267ADF18F572F900F8570F /* Foundation.framework */,
+				D5267AED18F572F900F8570F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5267AE118F572F900F8570F /* YADMILib */ = {
+			isa = PBXGroup;
+			children = (
+				D559312F18FC2B0800B9FFA5 /* Library */,
+				D5267AE218F572F900F8570F /* Supporting Files */,
+				D5F35F5F18FD193F00655D09 /* YADMJSONApiModel.h */,
+				D5F35F6018FD193F00655D09 /* YADMJSONApiModel.m */,
+			);
+			name = YADMILib;
+			sourceTree = SOURCE_ROOT;
+		};
+		D5267AE218F572F900F8570F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D59305EF190FD81B0000090C /* YADMLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = YADMLib;
+			sourceTree = "<group>";
+		};
+		D5267AF518F572F900F8570F /* YADMLib Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D58FE3ED190A63AC001822F1 /* YADMApiCallTest.m */,
+				D5267AF618F572F900F8570F /* Supporting Files */,
+			);
+			name = "YADMLib Tests";
+			path = YADMLibTests;
+			sourceTree = "<group>";
+		};
+		D5267AF618F572F900F8570F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5267AF718F572F900F8570F /* YADMLibTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D559312F18FC2B0800B9FFA5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D559313018FC2B0800B9FFA5 /* YADMApiCall.h */,
+				D559313118FC2B0800B9FFA5 /* YADMApiCall.m */,
+				D58FE3DC19091521001822F1 /* YADMApiCallDelegate.h */,
+				D559313818FC2DF900B9FFA5 /* YADMApiCallResult.h */,
+				D5F35FAF18FD3BAC00655D09 /* YADMApiCallResult.m */,
+				D5E6FF7D18FD74500090E35F /* YADMJSONModelError.h */,
+				D5E6FF7E18FD74500090E35F /* YADMJSONModelError.m */,
+				D58FE3E019095511001822F1 /* YADMJSONToDomainModelParser.h */,
+				D58FE3E119095511001822F1 /* YADMJSONToDomainModelParser.m */,
+			);
+			name = Library;
+			path = YADMLib/Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5267ADB18F572F900F8570F /* YADMLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5267AFF18F572F900F8570F /* Build configuration list for PBXNativeTarget "YADMLib" */;
+			buildPhases = (
+				D5267AD818F572F900F8570F /* Sources */,
+				D5267AD918F572F900F8570F /* Frameworks */,
+				D5267ADA18F572F900F8570F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YADMLib;
+			productName = AppLiftAPILib;
+			productReference = D5267ADC18F572F900F8570F /* libYADMLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D5267AEB18F572F900F8570F /* YADMLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5267B0218F572F900F8570F /* Build configuration list for PBXNativeTarget "YADMLibTests" */;
+			buildPhases = (
+				D5267AE818F572F900F8570F /* Sources */,
+				D5267AE918F572F900F8570F /* Frameworks */,
+				D5267AEA18F572F900F8570F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5267AF318F572F900F8570F /* PBXTargetDependency */,
+			);
+			name = YADMLibTests;
+			productName = AppLiftAPILibTests;
+			productReference = D5267AEC18F572F900F8570F /* YADMLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5267AD418F572F900F8570F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Pontlab;
+			};
+			buildConfigurationList = D5267AD718F572F900F8570F /* Build configuration list for PBXProject "YADMLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D5267AD318F572F900F8570F;
+			productRefGroup = D5267ADD18F572F900F8570F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5267ADB18F572F900F8570F /* YADMLib */,
+				D5267AEB18F572F900F8570F /* YADMLibTests */,
+				D58FE3EF190EA1F8001822F1 /* YADMUniversalLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5267AEA18F572F900F8570F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D58FE3F3190EA236001822F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -target YADMLib ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nmv \"${BUILD_DIR}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/lib${PROJECT_NAME}_device.a\"\nxcodebuild -target YADMLib ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nmv \"${BUILD_DIR}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/lib${PROJECT_NAME}_simulator.a\"\nlipo -create -output \"${BUILD_DIR}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/lib${PROJECT_NAME}_simulator.a\" \"${BUILD_DIR}/lib${PROJECT_NAME}_device.a\"\nrm \"${BUILD_DIR}/lib${PROJECT_NAME}_device.a\"\nrm \"${BUILD_DIR}/lib${PROJECT_NAME}_simulator.a\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5267AD818F572F900F8570F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58FE3F4190FB322001822F1 /* YADMApiCall.m in Sources */,
+				D58FE3F5190FB322001822F1 /* YADMApiCallResult.m in Sources */,
+				D58FE3F6190FB322001822F1 /* YADMJSONModelError.m in Sources */,
+				D58FE3F7190FB322001822F1 /* YADMJSONToDomainModelParser.m in Sources */,
+				D58FE3F8190FB322001822F1 /* YADMJSONApiModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5267AE818F572F900F8570F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F35F6218FD193F00655D09 /* YADMJSONApiModel.m in Sources */,
+				D58FE3EE190A63AC001822F1 /* YADMApiCallTest.m in Sources */,
+				D5F35FB118FD3BAC00655D09 /* YADMApiCallResult.m in Sources */,
+				D559313318FC2B0800B9FFA5 /* YADMApiCall.m in Sources */,
+				D58FE3E319095511001822F1 /* YADMJSONToDomainModelParser.m in Sources */,
+				D5E6FF8018FD74500090E35F /* YADMJSONModelError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5267AF318F572F900F8570F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5267ADB18F572F900F8570F /* YADMLib */;
+			targetProxy = D5267AF218F572F900F8570F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5267AFD18F572F900F8570F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(TARGET)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		D5267AFE18F572F900F8570F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(TARGET)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		D5267B0018F572F900F8570F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(TARGET)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = "/tmp/$(TARGET).dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLib/YADMLib-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		D5267B0118F572F900F8570F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(TARGET)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = "/tmp/$(TARGET).dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLib/YADMLib-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		D5267B0318F572F900F8570F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLib/YADMLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YADMLibTests/YADMLibTests-Info.plist";
+				PRODUCT_NAME = YADMLibTests;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5267B0418F572F900F8570F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLib/YADMLib-Prefix.pch";
+				INFOPLIST_FILE = "YADMLibTests/YADMLibTests-Info.plist";
+				PRODUCT_NAME = YADMLibTests;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		D58FE3F1190EA1F8001822F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D58FE3F2190EA1F8001822F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5267AD718F572F900F8570F /* Build configuration list for PBXProject "YADMLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5267AFD18F572F900F8570F /* Debug */,
+				D5267AFE18F572F900F8570F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5267AFF18F572F900F8570F /* Build configuration list for PBXNativeTarget "YADMLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5267B0018F572F900F8570F /* Debug */,
+				D5267B0118F572F900F8570F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5267B0218F572F900F8570F /* Build configuration list for PBXNativeTarget "YADMLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5267B0318F572F900F8570F /* Debug */,
+				D5267B0418F572F900F8570F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D58FE3F0190EA1F8001822F1 /* Build configuration list for PBXAggregateTarget "YADMUniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58FE3F1190EA1F8001822F1 /* Debug */,
+				D58FE3F2190EA1F8001822F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5267AD418F572F900F8570F /* Project object */;
+}

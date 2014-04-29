@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5729E3E190FDC7300A673CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5729E3D190FDC7300A673CF /* Foundation.framework */; };
+		D5729E40190FDC7300A673CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5729E3F190FDC7300A673CF /* CoreGraphics.framework */; };
+		D5729E42190FDC7300A673CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5729E41190FDC7300A673CF /* UIKit.framework */; };
+		D5729E48190FDC7400A673CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5729E46190FDC7400A673CF /* InfoPlist.strings */; };
+		D5729E4A190FDC7400A673CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E49190FDC7400A673CF /* main.m */; };
+		D5729E4E190FDC7400A673CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E4D190FDC7400A673CF /* AppDelegate.m */; };
+		D5729E51190FDC7400A673CF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5729E4F190FDC7400A673CF /* Main_iPhone.storyboard */; };
+		D5729E54190FDC7400A673CF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5729E52190FDC7400A673CF /* Main_iPad.storyboard */; };
+		D5729E57190FDC7400A673CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E56190FDC7400A673CF /* ViewController.m */; };
+		D5729E59190FDC7400A673CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5729E58190FDC7400A673CF /* Images.xcassets */; };
+		D5729E80190FEA7E00A673CF /* OpenWeatherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E7F190FEA7E00A673CF /* OpenWeatherAPI.m */; };
+		D5729E83190FEB0400A673CF /* OpenWeatherAPICoord.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E82190FEB0400A673CF /* OpenWeatherAPICoord.m */; };
+		D5729E86190FEE4C00A673CF /* OpenWeatherAPISys.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E85190FEE4C00A673CF /* OpenWeatherAPISys.m */; };
+		D5729E89190FEF4500A673CF /* OpenWeatherAPIWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E88190FEF4500A673CF /* OpenWeatherAPIWeather.m */; };
+		D5729E8C190FF21200A673CF /* OpenWeatherAPIMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E8B190FF21200A673CF /* OpenWeatherAPIMain.m */; };
+		D5729E8F190FF2D400A673CF /* OpenWeatherAPIWind.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E8E190FF2D400A673CF /* OpenWeatherAPIWind.m */; };
+		D5729E92190FF37D00A673CF /* OpenWeatherAPIClouds.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E91190FF37D00A673CF /* OpenWeatherAPIClouds.m */; };
+		D5729EA9190FF8EC00A673CF /* YADMApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729E9E190FF8EC00A673CF /* YADMApiCall.m */; };
+		D5729EAA190FF8EC00A673CF /* YADMApiCallResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729EA1190FF8EC00A673CF /* YADMApiCallResult.m */; };
+		D5729EAB190FF8EC00A673CF /* YADMJSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729EA3190FF8EC00A673CF /* YADMJSONModelError.m */; };
+		D5729EAC190FF8EC00A673CF /* YADMJSONToDomainModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729EA5190FF8EC00A673CF /* YADMJSONToDomainModelParser.m */; };
+		D5729EAD190FF8EC00A673CF /* YADMJSONApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5729EA7190FF8EC00A673CF /* YADMJSONApiModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D5729E3A190FDC7300A673CF /* YADMLibTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YADMLibTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5729E3D190FDC7300A673CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5729E3F190FDC7300A673CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5729E41190FDC7300A673CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5729E45190FDC7400A673CF /* YADMLibTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YADMLibTester-Info.plist"; sourceTree = "<group>"; };
+		D5729E47190FDC7400A673CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5729E49190FDC7400A673CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5729E4B190FDC7400A673CF /* YADMLibTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YADMLibTester-Prefix.pch"; sourceTree = "<group>"; };
+		D5729E4C190FDC7400A673CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5729E4D190FDC7400A673CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5729E50190FDC7400A673CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D5729E53190FDC7400A673CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D5729E55190FDC7400A673CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D5729E56190FDC7400A673CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D5729E58190FDC7400A673CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5729E5F190FDC7400A673CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5729E7E190FEA7E00A673CF /* OpenWeatherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPI.h; sourceTree = "<group>"; };
+		D5729E7F190FEA7E00A673CF /* OpenWeatherAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPI.m; sourceTree = "<group>"; };
+		D5729E81190FEB0400A673CF /* OpenWeatherAPICoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPICoord.h; sourceTree = "<group>"; };
+		D5729E82190FEB0400A673CF /* OpenWeatherAPICoord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPICoord.m; sourceTree = "<group>"; };
+		D5729E84190FEE4C00A673CF /* OpenWeatherAPISys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPISys.h; sourceTree = "<group>"; };
+		D5729E85190FEE4C00A673CF /* OpenWeatherAPISys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPISys.m; sourceTree = "<group>"; };
+		D5729E87190FEF4500A673CF /* OpenWeatherAPIWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPIWeather.h; sourceTree = "<group>"; };
+		D5729E88190FEF4500A673CF /* OpenWeatherAPIWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPIWeather.m; sourceTree = "<group>"; };
+		D5729E8A190FF21200A673CF /* OpenWeatherAPIMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPIMain.h; sourceTree = "<group>"; };
+		D5729E8B190FF21200A673CF /* OpenWeatherAPIMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPIMain.m; sourceTree = "<group>"; };
+		D5729E8D190FF2D400A673CF /* OpenWeatherAPIWind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPIWind.h; sourceTree = "<group>"; };
+		D5729E8E190FF2D400A673CF /* OpenWeatherAPIWind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPIWind.m; sourceTree = "<group>"; };
+		D5729E90190FF37D00A673CF /* OpenWeatherAPIClouds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenWeatherAPIClouds.h; sourceTree = "<group>"; };
+		D5729E91190FF37D00A673CF /* OpenWeatherAPIClouds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenWeatherAPIClouds.m; sourceTree = "<group>"; };
+		D5729E9D190FF8EC00A673CF /* YADMApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCall.h; sourceTree = "<group>"; };
+		D5729E9E190FF8EC00A673CF /* YADMApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMApiCall.m; sourceTree = "<group>"; };
+		D5729E9F190FF8EC00A673CF /* YADMApiCallDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCallDelegate.h; sourceTree = "<group>"; };
+		D5729EA0190FF8EC00A673CF /* YADMApiCallResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMApiCallResult.h; sourceTree = "<group>"; };
+		D5729EA1190FF8EC00A673CF /* YADMApiCallResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMApiCallResult.m; sourceTree = "<group>"; };
+		D5729EA2190FF8EC00A673CF /* YADMJSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMJSONModelError.h; sourceTree = "<group>"; };
+		D5729EA3190FF8EC00A673CF /* YADMJSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMJSONModelError.m; sourceTree = "<group>"; };
+		D5729EA4190FF8EC00A673CF /* YADMJSONToDomainModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMJSONToDomainModelParser.h; sourceTree = "<group>"; };
+		D5729EA5190FF8EC00A673CF /* YADMJSONToDomainModelParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMJSONToDomainModelParser.m; sourceTree = "<group>"; };
+		D5729EA6190FF8EC00A673CF /* YADMJSONApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YADMJSONApiModel.h; sourceTree = "<group>"; };
+		D5729EA7190FF8EC00A673CF /* YADMJSONApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YADMJSONApiModel.m; sourceTree = "<group>"; };
+		D5729EA8190FF8EC00A673CF /* YADMLib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YADMLib-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5729E37190FDC7300A673CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5729E40190FDC7300A673CF /* CoreGraphics.framework in Frameworks */,
+				D5729E42190FDC7300A673CF /* UIKit.framework in Frameworks */,
+				D5729E3E190FDC7300A673CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5729E31190FDC7300A673CF = {
+			isa = PBXGroup;
+			children = (
+				D5729E43190FDC7300A673CF /* YADMLibTester */,
+				D5729E3C190FDC7300A673CF /* Frameworks */,
+				D5729E3B190FDC7300A673CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5729E3B190FDC7300A673CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E3A190FDC7300A673CF /* YADMLibTester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5729E3C190FDC7300A673CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E9B190FF8EC00A673CF /* YADMLib */,
+				D5729E3D190FDC7300A673CF /* Foundation.framework */,
+				D5729E3F190FDC7300A673CF /* CoreGraphics.framework */,
+				D5729E41190FDC7300A673CF /* UIKit.framework */,
+				D5729E5F190FDC7400A673CF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5729E43190FDC7300A673CF /* YADMLibTester */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E4C190FDC7400A673CF /* AppDelegate.h */,
+				D5729E4D190FDC7400A673CF /* AppDelegate.m */,
+				D5729E58190FDC7400A673CF /* Images.xcassets */,
+				D5729E52190FDC7400A673CF /* Main_iPad.storyboard */,
+				D5729E4F190FDC7400A673CF /* Main_iPhone.storyboard */,
+				D5729E44190FDC7300A673CF /* Supporting Files */,
+				D5729E55190FDC7400A673CF /* ViewController.h */,
+				D5729E56190FDC7400A673CF /* ViewController.m */,
+			);
+			path = YADMLibTester;
+			sourceTree = "<group>";
+		};
+		D5729E44190FDC7300A673CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E93190FF44500A673CF /* Models */,
+				D5729E45190FDC7400A673CF /* YADMLibTester-Info.plist */,
+				D5729E46190FDC7400A673CF /* InfoPlist.strings */,
+				D5729E49190FDC7400A673CF /* main.m */,
+				D5729E4B190FDC7400A673CF /* YADMLibTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5729E93190FF44500A673CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E7E190FEA7E00A673CF /* OpenWeatherAPI.h */,
+				D5729E7F190FEA7E00A673CF /* OpenWeatherAPI.m */,
+				D5729E90190FF37D00A673CF /* OpenWeatherAPIClouds.h */,
+				D5729E91190FF37D00A673CF /* OpenWeatherAPIClouds.m */,
+				D5729E81190FEB0400A673CF /* OpenWeatherAPICoord.h */,
+				D5729E82190FEB0400A673CF /* OpenWeatherAPICoord.m */,
+				D5729E8A190FF21200A673CF /* OpenWeatherAPIMain.h */,
+				D5729E8B190FF21200A673CF /* OpenWeatherAPIMain.m */,
+				D5729E84190FEE4C00A673CF /* OpenWeatherAPISys.h */,
+				D5729E85190FEE4C00A673CF /* OpenWeatherAPISys.m */,
+				D5729E87190FEF4500A673CF /* OpenWeatherAPIWeather.h */,
+				D5729E88190FEF4500A673CF /* OpenWeatherAPIWeather.m */,
+				D5729E8D190FF2D400A673CF /* OpenWeatherAPIWind.h */,
+				D5729E8E190FF2D400A673CF /* OpenWeatherAPIWind.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D5729E9B190FF8EC00A673CF /* YADMLib */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E9C190FF8EC00A673CF /* Library */,
+				D5729EA6190FF8EC00A673CF /* YADMJSONApiModel.h */,
+				D5729EA7190FF8EC00A673CF /* YADMJSONApiModel.m */,
+				D5729EA8190FF8EC00A673CF /* YADMLib-Prefix.pch */,
+			);
+			name = YADMLib;
+			path = ../YADMLib;
+			sourceTree = "<group>";
+		};
+		D5729E9C190FF8EC00A673CF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D5729E9D190FF8EC00A673CF /* YADMApiCall.h */,
+				D5729E9E190FF8EC00A673CF /* YADMApiCall.m */,
+				D5729E9F190FF8EC00A673CF /* YADMApiCallDelegate.h */,
+				D5729EA0190FF8EC00A673CF /* YADMApiCallResult.h */,
+				D5729EA1190FF8EC00A673CF /* YADMApiCallResult.m */,
+				D5729EA2190FF8EC00A673CF /* YADMJSONModelError.h */,
+				D5729EA3190FF8EC00A673CF /* YADMJSONModelError.m */,
+				D5729EA4190FF8EC00A673CF /* YADMJSONToDomainModelParser.h */,
+				D5729EA5190FF8EC00A673CF /* YADMJSONToDomainModelParser.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5729E39190FDC7300A673CF /* YADMLibTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5729E6F190FDC7400A673CF /* Build configuration list for PBXNativeTarget "YADMLibTester" */;
+			buildPhases = (
+				D5729E36190FDC7300A673CF /* Sources */,
+				D5729E37190FDC7300A673CF /* Frameworks */,
+				D5729E38190FDC7300A673CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YADMLibTester;
+			productName = YADMLibTester;
+			productReference = D5729E3A190FDC7300A673CF /* YADMLibTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5729E32190FDC7300A673CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Pontlab;
+			};
+			buildConfigurationList = D5729E35190FDC7300A673CF /* Build configuration list for PBXProject "YADMLibTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5729E31190FDC7300A673CF;
+			productRefGroup = D5729E3B190FDC7300A673CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5729E39190FDC7300A673CF /* YADMLibTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5729E38190FDC7300A673CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5729E54190FDC7400A673CF /* Main_iPad.storyboard in Resources */,
+				D5729E59190FDC7400A673CF /* Images.xcassets in Resources */,
+				D5729E51190FDC7400A673CF /* Main_iPhone.storyboard in Resources */,
+				D5729E48190FDC7400A673CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5729E36190FDC7300A673CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5729EAC190FF8EC00A673CF /* YADMJSONToDomainModelParser.m in Sources */,
+				D5729E8C190FF21200A673CF /* OpenWeatherAPIMain.m in Sources */,
+				D5729E83190FEB0400A673CF /* OpenWeatherAPICoord.m in Sources */,
+				D5729E57190FDC7400A673CF /* ViewController.m in Sources */,
+				D5729E92190FF37D00A673CF /* OpenWeatherAPIClouds.m in Sources */,
+				D5729E8F190FF2D400A673CF /* OpenWeatherAPIWind.m in Sources */,
+				D5729E4E190FDC7400A673CF /* AppDelegate.m in Sources */,
+				D5729EAD190FF8EC00A673CF /* YADMJSONApiModel.m in Sources */,
+				D5729E86190FEE4C00A673CF /* OpenWeatherAPISys.m in Sources */,
+				D5729EA9190FF8EC00A673CF /* YADMApiCall.m in Sources */,
+				D5729E89190FEF4500A673CF /* OpenWeatherAPIWeather.m in Sources */,
+				D5729EAB190FF8EC00A673CF /* YADMJSONModelError.m in Sources */,
+				D5729E4A190FDC7400A673CF /* main.m in Sources */,
+				D5729EAA190FF8EC00A673CF /* YADMApiCallResult.m in Sources */,
+				D5729E80190FEA7E00A673CF /* OpenWeatherAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5729E46190FDC7400A673CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5729E47190FDC7400A673CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5729E4F190FDC7400A673CF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5729E50190FDC7400A673CF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D5729E52190FDC7400A673CF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5729E53190FDC7400A673CF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5729E6D190FDC7400A673CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5729E6E190FDC7400A673CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5729E70190FDC7400A673CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLibTester/YADMLibTester-Prefix.pch";
+				INFOPLIST_FILE = "YADMLibTester/YADMLibTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ncsongor/Works/Mobile/pontlab/YADMLib/Build/Products,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5729E71190FDC7400A673CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YADMLibTester/YADMLibTester-Prefix.pch";
+				INFOPLIST_FILE = "YADMLibTester/YADMLibTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ncsongor/Works/Mobile/pontlab/YADMLib/Build/Products,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5729E35190FDC7300A673CF /* Build configuration list for PBXProject "YADMLibTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5729E6D190FDC7400A673CF /* Debug */,
+				D5729E6E190FDC7400A673CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5729E6F190FDC7400A673CF /* Build configuration list for PBXNativeTarget "YADMLibTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5729E70190FDC7400A673CF /* Debug */,
+				D5729E71190FDC7400A673CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5729E32190FDC7300A673CF /* Project object */;
+}

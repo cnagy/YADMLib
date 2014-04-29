@@ -78,13 +78,7 @@ Now let's call the Openweather API through the `OpenWeatherAPI` class in a contr
 
 - (void)testTimeLoaded
 {
-    NSLog(@"Base: %@", self.weather.base);
-    NSLog(@"Coord/lat: %@", self.weather.coord.lat);
-    NSLog(@"Sys/country: %@", self.weather.sys.country);
-    NSLog(@"Weather/description: %@", ((OpenWeatherAPIWeather*)[self.weather.weather firstObject]).description);
-    NSLog(@"Main/temp: %@", self.weather.main.temp);
-    NSLog(@"Wind/speed: %@", self.weather.wind.speed);
-    NSLog(@"Clouds/all: %@", self.weather.clouds.all);
+    NSLog(@"City: %@", self.weather.name);
 }
 
 @end

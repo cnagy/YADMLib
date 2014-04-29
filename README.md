@@ -22,7 +22,7 @@ pod 'YADMLib'
 ```
 If you want to read more about CocoaPods, have a look at [this short tutorial](http://www.raywenderlich.com/12139/introduction-to-cocoapods).
 
-## Usage
+## Simple implementation
 
 Let's to get some JSON from [Openweather](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) and map it in a `OpenWeatherAPI` model.
 
@@ -83,4 +83,85 @@ Now let's call the Openweather API through the `OpenWeatherAPI` class in a contr
 
 @end
 ```
+## Advanced implementation
 
+Because the [Openweather API](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) is returning a complex JSON, with nested objects and arrays let's map them to et all the data from.
+
+This is how our return object should look like:
+
+```objective-c
+#import "YADMJSONApiModel.h"
+#import "OpenWeatherAPICoord.h"
+#import "OpenWeatherAPISys.h"
+#import "OpenWeatherAPIWeather.h"
+#import "OpenWeatherAPIMain.h"
+#import "OpenWeatherAPIWind.h"
+#import "OpenWeatherAPIClouds.h"
+
+@protocol OpenWeatherAPI <NSObject>
+@end
+
+@interface OpenWeatherAPI : YADMJSONApiModel <OpenWeatherAPI>
+
+@property (nonatomic, strong) OpenWeatherAPICoord               *coord;
+@property (nonatomic, strong) OpenWeatherAPISys                 *sys;
+@property (nonatomic, strong) NSArray<OpenWeatherAPIWeather>    *weather;
+@property (nonatomic, strong) NSString                          *base;
+@property (nonatomic, strong) OpenWeatherAPIMain                *main;
+@property (nonatomic, strong) OpenWeatherAPIWind                *wind;
+@property (nonatomic, strong) OpenWeatherAPIClouds              *clouds;
+@property (nonatomic, strong) NSNumber                          *dt;
+@property (nonatomic, strong) NSNumber                          *id;
+@property (nonatomic, strong) NSString                          *name;
+@property (nonatomic, strong) NSNumber                          *cod;
+
+@end
+```
+
+where `*coord` is a `OpenWeatherAPICoord` class:
+
+```objective-c
+#import "YADMJSONApiModel.h"
+
+@protocol OpenWeatherAPICoord <NSObject>
+@end
+
+@interface OpenWeatherAPICoord : YADMJSONApiModel <OpenWeatherAPICoord>
+
+@property (nonatomic, strong) NSNumber      *lon;
+@property (nonatomic, strong) NSNumber      *lat;
+
+@end
+```
+
+and `*weather` is an `NSArray` of `OpenWeatherAPIWeather` classes:
+
+```objective-c
+#import "YADMJSONApiModel.h"
+
+@protocol OpenWeatherAPIWeather <NSObject>
+@end
+
+@interface OpenWeatherAPIWeather : YADMJSONApiModel <OpenWeatherAPIWeather>
+
+@property (nonatomic, strong) NSNumber      *id;
+@property (nonatomic, strong) NSString      *main;
+@property (nonatomic, strong) NSString      *description;
+@property (nonatomic, strong) NSString      *icon;
+
+@end
+```
+
+# Misc
+
+#### Author
+
+[Csongor Nagy](http://applift.com)
+
+#### License
+
+This code is distributed under the terms and conditions of the MIT license. 
+
+#### Contribution guidelines
+
+**NB!** If you fix a bug you discovered or have development ideas, feel free to make a pull request.

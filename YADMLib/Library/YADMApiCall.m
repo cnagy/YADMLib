@@ -32,7 +32,7 @@
 @property (nonatomic, strong) NSDictionary                      *headers;
 @property (nonatomic, assign) NSURLRequestCachePolicy           policy;
 @property (nonatomic, assign) NSTimeInterval                    timeout;
-@property (strong) NSObject<YADMApiCallDelegate>                *delegate;
+@property (nonatomic, readwrite) NSObject<YADMApiCallDelegate>  *delegate;
 @property (nonatomic, strong) NSURLConnection                   *connection;
 @property (nonatomic, assign) BOOL                              startImmediately;
 

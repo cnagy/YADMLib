@@ -39,7 +39,7 @@
                                                timeout:30
                                     andCompletionBlock:^(NSError *error) {
                                         __strong typeof(self) strongSelf = weakSelf;
-                                        if (!error && strongSelf.weather.result)
+                                        if (!error)
                                         {
                                             [strongSelf testTimeLoaded];
                                         }

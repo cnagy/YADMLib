@@ -26,8 +26,6 @@
 
 typedef void (^YADMJSONApiModelCompletionBlock)(NSError *error);
 
-@property (nonatomic, strong) id result;
-
 - (id)initWithURL:(NSURL*)url
            method:(NSString*)method
            params:(NSDictionary*)params

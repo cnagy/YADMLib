@@ -146,7 +146,6 @@ andCompletionBlock:(YADMJSONApiModelCompletionBlock)block
         
         free(properties);
         
-        self.result = parser.result;
         self.block(nil);
     }
     else

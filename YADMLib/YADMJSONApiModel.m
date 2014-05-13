@@ -32,8 +32,7 @@
 
 @interface YADMJSONApiModel() <YADMApiCallDelegate>
 
-@property (nonatomic, strong) NSArray                           *reservedProperties;
-@property (nonatomic, strong) YADMApiCall                         *call;
+@property (nonatomic, strong) YADMApiCall                       *call;
 @property (nonatomic, strong) YADMJSONApiModelCompletionBlock   block;
 
 @end
@@ -130,16 +129,14 @@ andCompletionBlock:(YADMJSONApiModelCompletionBlock)block
             if(propName) {
                 NSString *propertyName = [NSString stringWithCString:propName
                                                             encoding:[NSString defaultCStringEncoding]];
-                @try {
-                    NSString* setMethod = [NSString stringWithFormat:@"set%@:", [propertyName capitalizedString]];
-                    SEL setSelector = NSSelectorFromString(setMethod);
+                NSString* setMethod = [NSString stringWithFormat:@"set%@:", [propertyName capitalizedString]];
+                SEL setSelector = NSSelectorFromString(setMethod);
+                if ([self respondsToSelector:setSelector])
+                {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
                     [self performSelector:setSelector withObject:[parser.result performSelector:NSSelectorFromString(propertyName)]];
 #pragma clang diagnostic pop
-                }
-                @catch (NSException *exception) {
-                    
                 }
             }
         }

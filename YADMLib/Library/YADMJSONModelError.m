@@ -24,7 +24,7 @@
 
 #import "YADMJSONModelError.h"
 
-NSString *const kYADMJSONModelErrorDomain = @"com.Csongor Nagy.ErrorDomain";
+NSString *const kYADMJSONModelErrorDomain = @"com.pontlab.YADMJSONModel.ErrorDomain";
 
 @implementation YADMJSONModelError
 

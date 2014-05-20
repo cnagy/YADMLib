@@ -97,9 +97,10 @@ NSString * const kYADMDateFormat            = @"dd-MM-yyyy";
 {
     Class class = [entity class];
     
-    for (NSString *property in element)
+    [element enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
     {
-        NSString *valueString = [element objectForKey:property];
+        NSString *property = key;
+        NSString *valueString = obj;
         
         if ([[valueString class] isSubclassOfClass:[NSDictionary class]])
         {
@@ -164,7 +165,7 @@ NSString * const kYADMDateFormat            = @"dd-MM-yyyy";
         {
             [self addField:property value:valueString entity:entity];
         }
-    }
+    }];
 }
 
 - (NSString*)getPropertyType:(NSObject*)entity property:(NSString*)property

@@ -17,8 +17,10 @@ YADMLib is a lightweight network library, with JSON to data model parsing capabi
 
 In your project's **Podfile** add the YADMLib pod:
 
-```ruby
-pod 'YADMLib'
+```objective-c
+target "YourProject" do
+	pod 'YADMLib'
+end
 ```
 If you want to read more about CocoaPods, have a look at [this short tutorial](http://www.raywenderlich.com/12139/introduction-to-cocoapods).
 
@@ -48,7 +50,7 @@ Our basic `OpenWeatherAPI` model will look like
 Now let's call the Openweather API through the `OpenWeatherAPI` class in a controller:
 
 ```objective-c
-#import "YADMJSONApiModel.h"
+#import "OpenWeatherAPI.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) OpenWeatherAPI    *weather;
@@ -69,7 +71,7 @@ Now let's call the Openweather API through the `OpenWeatherAPI` class in a contr
                                              timeout:30
                                   andCompletionBlock:^(NSError *error) {
                                       __strong typeof(self) strongSelf = weakSelf;
-                                      if (!error && strongSelf.weather.result)
+                                      if (!error && strongSelf.weather)
                                       {
                                           [strongSelf testTimeLoaded];
                                       }

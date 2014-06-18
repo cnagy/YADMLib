@@ -158,7 +158,7 @@ and `*weather` is an `NSArray` of `OpenWeatherAPIWeather` classes:
 
 #### Author
 
-[Csongor Nagy](http://applift.com)
+Csongor Nagy
 
 #### License
 

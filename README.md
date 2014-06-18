@@ -87,7 +87,7 @@ Now let's call the Openweather API through the `OpenWeatherAPI` class in a contr
 ```
 ## Advanced implementation
 
-Because the [Openweather API](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) is returning a complex JSON, with nested objects and arrays let's map them to et all the data from.
+The [Openweather API](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) is returning a complex JSON, nested objects, arrays. With YADMLib all this data is popupated automatically, you just have to map the claas structure.
 
 This is how our return object should look like:
 

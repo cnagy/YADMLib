@@ -88,7 +88,12 @@
                                            queue:[NSOperationQueue mainQueue]
                                completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
          {
-             if(error == nil)
+             NSDictionary *headers = [(NSHTTPURLResponse*)response allHeaderFields];
+             NSString *contentType = [headers objectForKey:@"Content-Type"];
+             
+             if(error == nil &&
+                contentType &&
+                [contentType isEqualToString:@"application/json; charset=utf-8"])
              {
                  YADMApiCallResult *callResult = [[YADMApiCallResult alloc] init];
                  callResult.httpResponse = response;

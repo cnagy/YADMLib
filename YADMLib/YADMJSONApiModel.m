@@ -98,9 +98,9 @@ andCompletionBlock:(YADMJSONApiModelCompletionBlock)block
     
     if (!callResult.responseData)
     {
-        error = [NSError errorWithDomain:kYADMJSONModelErrorDomain
-                                    code:kALJSONModelErrorJSONUnreachable
-                                userInfo:@{NSLocalizedDescriptionKey:@"Bad response or JSON is unreachable."}];
+        error = (YADMJSONModelError*)[NSError errorWithDomain:kYADMJSONModelErrorDomain
+                                                         code:kALJSONModelErrorJSONUnreachable
+                                                     userInfo:@{NSLocalizedDescriptionKey:@"Bad response or JSON is unreachable."}];
     }
     
     if (error == nil)

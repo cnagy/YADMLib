@@ -129,7 +129,9 @@ andCompletionBlock:(YADMJSONApiModelCompletionBlock)block
             if(propName) {
                 NSString *propertyName = [NSString stringWithCString:propName
                                                             encoding:[NSString defaultCStringEncoding]];
-                NSString* setMethod = [NSString stringWithFormat:@"set%@:", [propertyName capitalizedString]];
+                NSString* setMethod = [NSString stringWithFormat:@"set%@:",
+                                       [propertyName stringByReplacingCharactersInRange:NSMakeRange(0,1)
+                                                                             withString:[[propertyName substringToIndex:1] uppercaseString]]];
                 SEL setSelector = NSSelectorFromString(setMethod);
                 if ([self respondsToSelector:setSelector])
                 {

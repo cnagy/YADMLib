@@ -27,7 +27,9 @@
 
 #import "YADMJSONToDomainModelParser.h"
 
-NSString * const kYADMDateFormat            = @"dd-MM-yyyy";
+#define reservedNames [NSArray arrayWithObjects:@"description", nil]
+
+NSString    * const kYADMDateFormat             = @"dd-MM-yyyy";
 
 @implementation YADMJSONToDomainModelParser
 
@@ -170,6 +172,13 @@ NSString * const kYADMDateFormat            = @"dd-MM-yyyy";
 
 - (NSString*)getPropertyType:(NSObject*)entity property:(NSString*)property
 {
+    if ([reservedNames containsObject:property])
+    {
+        NSString *uppercase = [[property substringToIndex:1] uppercaseString];
+        NSString *lowercase = [[property substringFromIndex:1] lowercaseString];
+        property = [uppercase stringByAppendingString:lowercase];
+    }
+    
     const char *type = property_getAttributes(class_getProperty([entity class], [property UTF8String]));
     NSString *typeString = [NSString stringWithUTF8String:type];
     NSArray *attributes = [typeString componentsSeparatedByString:@","];

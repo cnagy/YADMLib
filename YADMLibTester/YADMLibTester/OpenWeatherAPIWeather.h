@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) NSNumber      *id;
 @property (nonatomic, strong) NSString      *main;
-@property (nonatomic, strong) NSString      *description;
+@property (nonatomic, strong) NSString      *Description;
 @property (nonatomic, strong) NSString      *icon;
 
 @end

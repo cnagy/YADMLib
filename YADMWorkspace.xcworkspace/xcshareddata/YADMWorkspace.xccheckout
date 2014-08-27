@@ -10,29 +10,29 @@
 	<string>YADMWorkspace</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>875545A2-46A6-43D0-900F-98A42E4AA9A1</key>
+		<key>B29152D6D71A12646C005E6EB3E76936CF3A113F</key>
 		<string>https://github.com/cnagy/YADMLib</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>YADMWorkspace.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>875545A2-46A6-43D0-900F-98A42E4AA9A1</key>
+		<key>B29152D6D71A12646C005E6EB3E76936CF3A113F</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/cnagy/YADMLib</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>875545A2-46A6-43D0-900F-98A42E4AA9A1</string>
+	<string>B29152D6D71A12646C005E6EB3E76936CF3A113F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>875545A2-46A6-43D0-900F-98A42E4AA9A1</string>
+			<string>B29152D6D71A12646C005E6EB3E76936CF3A113F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>YADMLib</string>
 		</dict>

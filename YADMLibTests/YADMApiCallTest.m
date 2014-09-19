@@ -87,7 +87,7 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    [self.call performSelector:@selector(invokeDidFinishedWithResult:)];
+    [self.call performSelector:@selector(invokeDidFinishedWithResult:) withObject:nil];
 #pragma clang diagnostic pop
 }
 
@@ -104,7 +104,7 @@
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    [self.call performSelector:@selector(invokeDidFailedWithError:)];
+    [self.call performSelector:@selector(invokeDidFailedWithError:) withObject:nil];
 #pragma clang diagnostic pop
 }
 

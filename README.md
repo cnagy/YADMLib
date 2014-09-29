@@ -1,4 +1,4 @@
-# YADMLib
+# YADMLib ![](https://ship.io/jobs/4WzJyh2wVv5G2T5n/build_status.png)
 
 YADMLib is a lightweight network library, with JSON to data model parsing capability for Objective C.
 

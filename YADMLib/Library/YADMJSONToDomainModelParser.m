@@ -149,6 +149,21 @@ NSString    * const kYADMDateFormat             = @"dd-MM-yyyy";
                             NSLog(@"%@ does not recognize the property \"name\"", property);
                         }
                     }
+                    
+                    return;
+                }
+                
+                NSArray *json = (NSArray*)valueString;
+                @try
+                {
+                    [entity setValue:json forKey:property];
+                }
+                @catch (NSException *e)
+                {
+                    if ([[e name] isEqualToString:NSUndefinedKeyException])
+                    {
+                        NSLog(@"%@ does not recognize the property \"name\"", [property uppercaseString]);
+                    }
                 }
             }
             else

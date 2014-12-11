@@ -37,7 +37,7 @@
                                                headers:nil
                                            cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                timeout:30
-                                    andCompletionBlock:^(NSError *error) {
+                    andCompletionBlock:^(NSString *parsedJson, NSError *error) {
                                         __strong typeof(self) strongSelf = weakSelf;
                                         if (!error)
                                         {

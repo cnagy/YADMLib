@@ -26,7 +26,7 @@
 
 @interface YADMJSONApiModel : NSObject
 
-typedef void (^YADMJSONApiModelCompletionBlock)(NSError *error);
+typedef void (^YADMJSONApiModelCompletionBlock)(NSString *parsedJson, NSError *error);
 
 - (id)initWithURL:(NSURL*)url
            method:(NSString*)method

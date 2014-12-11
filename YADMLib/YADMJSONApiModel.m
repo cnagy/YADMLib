@@ -145,17 +145,18 @@ andCompletionBlock:(YADMJSONApiModelCompletionBlock)block
         
         free(properties);
         
-        self.block(nil);
+        NSString *jsonString = [NSString stringWithUTF8String:[callResult.responseData bytes]];
+        self.block(jsonString, nil);
     }
     else
     {
-        self.block(error);
+        self.block(nil, error);
     }
 }
 
 - (void)apiCall:(YADMApiCall*)call didFailedWithError:(NSError*)error
 {
-    self.block(error);
+    self.block(nil, error);
 }
 
 @end

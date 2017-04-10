@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 
-#import "YADMJSONApiModel.h"
 #import "OpenWeatherAPI.h"
 
 @interface ViewController ()
@@ -30,10 +29,14 @@
     
     __weak typeof(self) weakSelf = self;
     
+    NSDictionary *info = [[NSBundle mainBundle] infoDictionary];
+    NSString *openweathermapAPPId = [info objectForKey:@"openweathermap.org.appid"];
+    
     self.weather = [[OpenWeatherAPI alloc] initWithURL:[NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather"]
                                                 method:@"GET"
                                                 params:@{@"q"       : @"Berlin,de",
-                                                         @"units"   : @"metric"}
+                                                         @"units"   : @"metric",
+                                                         @"appid"   : openweathermapAPPId}
                                                headers:nil
                                            cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                                timeout:30

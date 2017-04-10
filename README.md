@@ -26,7 +26,8 @@ If you want to read more about CocoaPods, have a look at [this short tutorial](h
 
 ## Simple implementation
 
-Let's to get some JSON from [Openweather](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) and map it in a `OpenWeatherAPI` model.
+Get an account at [OpenweatherMap](https://home.openweathermap.org/users/sign_up) and use your API Key in the YADMLibTester app's Info.plist.
+Finally get some JSON from [OpenweatherMap](http://api.openweathermap.org/data/2.5/weather?q=Berlin,de) and map it in a `OpenWeatherAPI` model.
 
 Our basic `OpenWeatherAPI` model will look like
 
@@ -65,11 +66,12 @@ Now let's call the Openweather API through the `OpenWeatherAPI` class in a contr
   self.weather = [[OpenWeatherAPI alloc] initWithURL:[NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather"]
                                               method:@"GET"
                                               params:@{@"q"       : @"Berlin,de",
-                                                       @"units"   : @"metric"}
+                                                       @"units"   : @"metric",
+                                                       @"appid"   : openweathermapAPPId}
                                              headers:nil
                                          cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                              timeout:30
-                                  andCompletionBlock:^(NSError *error) {
+                                  andCompletionBlock:^(NSString *parsedJson, NSError *error) {
                                       __strong typeof(self) strongSelf = weakSelf;
                                       if (!error && strongSelf.weather)
                                       {

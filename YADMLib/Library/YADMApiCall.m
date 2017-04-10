@@ -84,32 +84,36 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        [NSURLConnection sendAsynchronousRequest:request
-                                           queue:[NSOperationQueue mainQueue]
-                               completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
-         {
-             NSDictionary *headers = [(NSHTTPURLResponse*)response allHeaderFields];
-             NSString *contentType = [headers objectForKey:@"Content-Type"];
-             
-             if(error == nil &&
-                contentType &&
-                [contentType isEqualToString:@"application/json; charset=utf-8"])
-             {
-                 YADMApiCallResult *callResult = [[YADMApiCallResult alloc] init];
-                 callResult.httpResponse = response;
-                 callResult.responseData = data;
-                 
-                 dispatch_async(dispatch_get_main_queue(), ^{
-                     [self invokeDidFinishedWithResult:callResult];
-                 });
-             }
-             else
-             {
-                 dispatch_async(dispatch_get_main_queue(), ^{
-                     [self invokeDidFailedWithError:error];
-                 });
-             }
-         }];
+        NSURLSession *session = [NSURLSession sharedSession];
+        
+        NSURLSessionDataTask *task = [session dataTaskWithRequest:request
+                                                completionHandler:
+                                      ^(NSData *data, NSURLResponse *response, NSError *error) {
+                                          NSDictionary *headers = [(NSHTTPURLResponse*)response allHeaderFields];
+                                          NSString *contentType = [headers objectForKey:@"Content-Type"];
+                                          
+                                          if(error == nil &&
+                                             contentType &&
+                                             [contentType isEqualToString:@"application/json; charset=utf-8"])
+                                          {
+                                              YADMApiCallResult *callResult = [[YADMApiCallResult alloc] init];
+                                              callResult.httpResponse = response;
+                                              callResult.responseData = data;
+                                              
+                                              dispatch_async(dispatch_get_main_queue(), ^{
+                                                  [self invokeDidFinishedWithResult:callResult];
+                                              });
+                                          }
+                                          else
+                                          {
+                                              dispatch_async(dispatch_get_main_queue(), ^{
+                                                  [self invokeDidFailedWithError:error];
+                                              });
+                                          }
+                                      }];
+        
+        [task resume];
+        
     });
 }
 

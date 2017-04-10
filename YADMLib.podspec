@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YADMLib"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "Yet Another Data Modeling Library."
   s.description  = <<-DESC
                    YADMLib is a lightweight network library, with JSON to data model parsing capability for Objective C.
